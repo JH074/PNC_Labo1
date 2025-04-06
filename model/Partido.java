@@ -3,17 +3,26 @@ import java.util.List;
 
 public class Partido {
 
-    private List<String> equipoA;
-    private List<String> equipoB;
+    private List<Jugador> equipoA;
+    private List<Jugador> equipoB;
     private int golesEquipoA;
     private int golesEquipoB;
 
     //Constructor
-    public Partido(List<String> equipoA, List<String> equipoB, int golesEquipoA, int golesEquipoB){
+    public Partido(List<Jugador> equipoA, List<Jugador> equipoB, int golesEquipoA, int golesEquipoB){
         this.equipoA = equipoA;
         this.equipoB = equipoB;
-        this.golesEquipoA = 0;
-        this.golesEquipoB = 0;
+        this.golesEquipoA = golesEquipoA;
+        this.golesEquipoB = golesEquipoB;
+    }
+
+    //Getters para equipos
+    public List<Jugador> getEquipoA() {
+        return equipoA;
+    }
+
+    public List<Jugador> getEquipoB() {
+        return equipoB;
     }
 
     //Registro goles
@@ -30,7 +39,6 @@ public class Partido {
             return "Equipo B";
         }
     }
-
 
     //Mostrar detalles del partido
     public void Detalles(){
