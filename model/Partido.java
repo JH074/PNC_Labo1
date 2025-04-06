@@ -16,7 +16,22 @@ public class Partido {
         this.golesEquipoB = golesEquipoB;
     }
 
-    //Getters para equipos
+    public int getGolesEquipoA() {
+        return golesEquipoA;
+    }
+
+    public void setGolesEquipoA(int golesEquipoA) {
+        this.golesEquipoA = golesEquipoA;
+    }
+
+    public int getGolesEquipoB() {
+        return golesEquipoB;
+    }
+
+    public void setGolesEquipoB(int golesEquipoB) {
+        this.golesEquipoB = golesEquipoB;
+    }
+
     public List<Jugador> getEquipoA() {
         return equipoA;
     }
