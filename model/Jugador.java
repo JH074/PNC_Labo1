@@ -52,11 +52,11 @@ public class Jugador {
     // toString override
     @Override
     public String toString() {
-        return "Jugador{ " +
+        return "Jugador | " +
                 "Nombre: " + nombre +
                 ", Goles marcados: " + golesMarcados +
                 ", Partidos jugados: " + partidosJugados +
-                '}';
+                '|';
     }
 }
 
